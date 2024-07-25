@@ -201,6 +201,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     observer.observe(footer);
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.querySelector('.loadingscreen video');
+  const loadingscreen = document.querySelector('.loadingscreen');
+  const maincontent = document.querySelector('.maincontent');
+  const navbar = document.querySelector('.navbar');
+  const footer = document.querySelector('.footer');
+
+  video.play();
+  loadingscreen.style.display = 'flex';
+  maincontent.style.display = 'none';
+  navbar.style.display = 'none';
+  footer.style.display = 'none';
+
+  video.onended = () => {
+      loadingscreen.style.display = 'none';
+      maincontent.style.display = 'block';
+      navbar.style.display = 'flex';
+      footer.style.display = 'flex';
+  };
+});
 
 if (window.screen.width <= "600"){
   gsap.registerPlugin(ScrollTrigger);

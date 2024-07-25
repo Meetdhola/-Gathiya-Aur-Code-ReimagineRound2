@@ -510,7 +510,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .footer-logo img {
@@ -825,19 +825,19 @@ p {
     top: 0vw; /* Adjusted to ensure visibility */
 }
 .footer {
-    top: 100%;
+    top: 98%;
+    left: 36%;
     width: 100%;
 }
 .footer-content {
     flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
+
 }
 .stats-section {
     position: fixed;
     top:0;
-    padding-left: auto;
-    padding-right: auto;
     padding: 20px 80px;
   }
 } 
@@ -856,3 +856,5 @@ p {
       margin-bottom: 0;
     }
   }
+
+  
