@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Contact Form 10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/utility.css">
+
+	</head>
+	<body>
+		  <nav class="navbar">
+                <div class="logoimg">
+                    <img src="assets/images/ajays_logo_white.png" alt="">
+                </div>
+                <div class="mainbar hideonpc">
+                    <a href="index.html">Home</a>
+                    <a href="index.html">AboutUs</a>
+                    <a href="menu.html">Our Menu</a>
+                    <a href="testimonal.html">Blog/News</a>
+                    <a href="outlets.html">Our Outlets</a>
+                    <a href="contact.html">ContactUs</a>
+                    <div class="ucicon">
+                        <img class="usericon"
+                            src="https://img.icons8.com/fluency-systems-filled/48/000000/guest-male.png"
+                            alt="guest-male" />
+                        <img class="carticon" src="https://img.icons8.com/pastel-glyph/64/000000/shopping-cart--v2.png"
+                            alt="shopping-cart--v2" />
+                    </div>
+                </div>
+                <img class="menuicon hideonmobile" onclick="showsidebar()"
+                    src="https://img.icons8.com/ios/50/000000/menu--v4.png" alt="menu--v4" />
+                <div class="sidebar">
+                    <img class="closeicon" src="https://img.icons8.com/ios/50/000000/delete-sign--v1.png"
+                        alt="delete-sign--v1" />
+                    <div class="logoimg">
+						<img src="assets/images/ajays_logo_white.png" alt="">
+                    </div>
+					<a href="index.html">Home</a>
+                    <a href="index.html">AboutUs</a>
+                    <a href="menu.html">Our Menu</a>
+                    <a href="testimonal.html">Blog/News</a>
+                    <a href="outlets.html">Our Outlets</a>
+                    <a href="contact.html">ContactUs</a>
+                </div>
+            </nav>
+	<section class="ftco-section img bg-hero" style="background-image: url(assets/images/bg_1.jpg);">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section"></h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-11">
+					<div class="wrapper">
+						<div class="row no-gutters justify-content-between">
+							<div class="col-lg-6 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-5">
+									<h3 class="mb-4">Contact us</h3>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text pl-4">
+					            <p><span>Address:</span> 198 West 21th Street,Pune 10016</p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text pl-4">
+					            <p><span>Phone:</span> <a href="tel://1234567920">+9135235598</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text pl-4">
+					            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@ajays.com</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text pl-4">
+					            <p><span>Website</span> <a href="#">ajays.com</a></p>
+					          </div>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-lg-5">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Get in touch</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/utility.js"></script>
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+

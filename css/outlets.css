@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: white;
+}
+
+.container {
+  margin-top: 10%;
+  padding: 0 20px;
+}
+
+.main-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: default;
+  position: relative;
+}
+
+.icon {
+  filter: invert(1);
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#imgDino:hover {
+  animation-play-state: running;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 260px;
+  padding: 20px 10px;
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgba(183, 182, 182, 0.4), 0 4px 6px -4px rgba(183, 182, 182, 0.4);
+  background: linear-gradient(45deg, #888888 0%, #333333 100%);
+  transition: all 0.6s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px -3px rgba(183, 182, 182, 0.4), 0 4px 6px -4px rgba(183, 182, 182, 0.4);
+  transform: translatey(-7px);
+}
+
+.content {
+  padding: 7px;
+}
+
+.content .price {
+  color: rgba(0, 0, 0, 0.64);
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.content .description {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0px 0px 10px rgba(46, 46, 46, 0.42);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.content .title2 {
+  color: #ffffffe1;
+  font-size: 20px;
+}
+
+.content .title3 {
+  font-size: 15px;
+}
+
+.content .title {
+  cursor: default;
+  color: goldenrod;
+  text-shadow: 0px 0px 10px rgba(46, 46, 46, 0.42);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  transition: color 0.4s ease-in;
+}
+
+.title:hover {
+  color: gold;
+}
+
+.fab-icon {
+  height: 30px;
+  transition: all 0.2s linear;
+}
+
+.fab-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-shadow: 0px 4px 18px #48505e;
+  transition: background-color 0.6s ease, color 0.4s ease-in;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #ec3333;
+  background-color: #121212;
+}
+
+.phone:hover {
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container{
+    margin-top: 12%;
+  }
+  .main-title {
+    font-size: 28px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+    margin-top: 15%;
+  }
+
+  .main-title {
+    font-size: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    height: 50px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

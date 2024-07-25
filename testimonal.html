@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajay's - Supper delicious Burger in town!</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/testimonal.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/testimonal.css">
+
+</head>
+
+<body id="top">
+
+  <nav class="navbar">
+    <div class="logoimg">
+        <img src="assets/images/ajays_logo_white.png" alt="">
+    </div>
+    <div class="mainbar hideonpc">
+        <a href="index.html">Home</a>
+        <a href="index.html">AboutUs</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="testimonal.html">Blog/News</a>
+        <a href="outlets.html">Our Outlets</a>
+        <a href="contact.html">ContactUs</a>
+        <div class="ucicon">
+            <img class="usericon"
+                src="https://img.icons8.com/fluency-systems-filled/48/000000/guest-male.png"
+                alt="guest-male" />
+            <img class="carticon" src="https://img.icons8.com/pastel-glyph/64/000000/shopping-cart--v2.png"
+                alt="shopping-cart--v2" />
+        </div>
+    </div>
+    <img class="menuicon hideonmobile" onclick="showsidebar()"
+        src="https://img.icons8.com/ios/50/000000/menu--v4.png" alt="menu--v4" />
+    <div class="sidebar">
+        <img class="closeicon" src="https://img.icons8.com/ios/50/000000/delete-sign--v1.png"
+            alt="delete-sign--v1" />
+        <div class="logoimg">
+          <img src="assets/images/ajays_logo_white.png" alt="">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="index.html">AboutUs</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="testimonal.html">Blog/News</a>
+        <a href="outlets.html">Our Outlets</a>
+        <a href="contact.html">ContactUs</a>
+    </div>
+</nav>
+
+      <section class="section section-divider white blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Latest Blog Posts</p>
+
+          <h2 class="h2 section-title">
+            This Is All About <span class="span">Foods</span>
+          </h2>
+
+          <p class="section-text">
+            Food is any substance consumed to provide nutritional support for an organism.
+          </p>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="assets/images/BURGER MAIN.png" width="600" height="390" loading="lazy"
+                    alt="What Do You Think About Cheese Pizza Recipes?" class="w-100">
+
+                  <div class="badge">Cheese Burger</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Jan 21 2024</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Keru</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Bulk Up your Burgers</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Grilling season is one of my favorite times at The Chopping Block. Who wouldn’t want to have a chef make food for you in one of our demonstration-style grilling classes like Italian Surf and Turf more...
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="assets/images/SANDWICH MAIN.png" width="600" height="390" loading="lazy"
+                    alt="" class="w-100">
+
+                  <div class="badge">Sandwich</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">May 22 2024</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Jiffy J</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Sandwich: What makes for the perfect sandwich?</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Max Halley: The perfect sandwich is all about execution. I have six rules for making sandwiches.Each one needs to contain something that’s hot, cold, sweet, sour, crunchy, soft. more...
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="assets/images/PIZZA MAIN.png" width="600" height="390" loading="lazy"
+                    alt="Innovative Hot Chessyraw Pasta Make Creator Fact." class="w-100">
+
+                  <div class="badge">PIZZA</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Dec 25 2023</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Harry</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Ajay's Unveils the Latest Trends in the Pizza Industry for 2024</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Green Bay, Wis. - As pizza aficionados eagerly anticipate the year ahead, the Ajay's team unveils the ultimate guide to revolutionizing the pizza industry more...
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+<!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section section-divider white testi">
+        <div class="container">
+
+          <p class="section-subtitle">Testimonials</p>
+
+          <h2 class="h2 section-title">
+            Our Customers <span class="span">Reviews</span>
+          </h2>
+
+          <p class="section-text">
+            This cozy restaurant has left the best impressions!
+          </p>
+
+          <ul class="testi-list has-scrollbar">
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/avatar-1.jpg" width="80" height="80" loading="lazy" alt="Robert William">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Robert William</h3>
+
+                    <p class="testi-title">CEO Kingfisher</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "The Food we had enjoyed at the time of dinner. It was really delicious taste with great quality, everything had unique taste which we had ordered, 
+                  nice arrangement and services from the staff while eating, we found nothing bad about this hotel."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/avatar-2.jpg" width="80" height="80" loading="lazy" alt="Thomas Josef">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Jay Rathod</h3>
+
+                    <p class="testi-title">Professor</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "We visited this place for breakfast and dinner. The place is very conveniently located (on the highway ) with ample parking space. The food at both the meals was tasty and definitely worth the price. Good quantity served per portion. Service as also good. Overall , a good place to have food."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/avatar-3.jpg" width="80" height="80" loading="lazy" alt="Charles Richard">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Charles Richard</h3>
+
+                    <p class="testi-title">Doctor</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "I would be lost without restaurant. I would like to personally thank you for your outstanding
+                  product."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      
+
+
+
+
+    </article>
+  </main>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/testimonal.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->       <script src="js/utility.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/testimonal.js"></script>
+</body>
+
+</html>

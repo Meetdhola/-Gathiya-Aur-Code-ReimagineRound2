@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+  margin: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  display: flex;
+  flex-direction: column;
+}
+
+.menubar {
+  margin: auto;
+}
+.main-container{
+  margin-top: 10%;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-icon {
+  position: absolute;
+  opacity: 0;
+  height: 20px;
+  left: 45px;
+  transition: left 300ms ease-in, opacity 300ms ease-in; /* Smooth transition for 'left' and 'opacity' */
+  display: flex; /* Ensure the icon is part of the layout */
+}
+
+.btn:hover .menu-icon {
+  opacity: 1;
+  left: 15px; /* Adjust the position as needed */
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 12px 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+  transition: background-color 300ms ease-in, color 300ms ease-in, border 300ms ease-in; /* Smooth transition for background, color, and border */
+  z-index: 99;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the text */
+  height: 52px; /* Ensure consistent height */
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #e1cb00;
+  color: #1f1f1f;
+  border: 1px solid #fff;
+}
+
+.btn-text {
+  display: inline-block;
+  transition: transform 300ms ease-in; /* Smooth transition for text */
+}
+
+.btn:hover .btn-text {
+  transform: translateX(15px); /* Adjust the translation distance as needed */
+}
+
+.icon {
+  height: 100%; /* Ensure the icon height is properly set */
+}
+
+.icon2 {
+  scale: 1.4;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 10px auto;
+  justify-content: space-evenly; /* Center cards in the wrapper */
+  overflow-y: auto;
+  position: relative;
+}
+
+.card-container {
+  position: absolute;
+  width: 100%;
+  max-width: 265px;
+  height: 500px;
+  opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-container:hover {
+  cursor: pointer;
+}
+
+.card-container:hover .product-card {
+  background-color: #e1cb00; /* Slightly lighter background on hover */
+  box-shadow: 3px 5px 10px rgba(255, 200, 0, 0.15);
+}
+
+.product-image-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+}
+
+.product-image-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 16px;
+  overflow: hidden; /* Ensure the scaling image does not overflow */
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease; /* Smooth scaling transition */
+}
+.scale1 {
+  scale: 1.4;
+}
+.scaled1{
+  scale: 0.8;
+}
+.scaled2{
+  scale: 0.9;
+}
+.contain{
+  object-fit: contain;
+}
+.card-container:hover .product-image {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
+.dotted-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 315px;
+  left: -12px;
+}
+
+.dotted-border rect {
+  stroke: #e0e0e0; /* Light color for border */
+  fill: transparent;
+  stroke-dasharray: 4;
+  stroke-dashoffset: 4;
+  animation: dottedLineAnim 1.5s infinite linear;
+  rx: 30;
+  ry: 30;
+  height: 99%;
+  width: 99%;
+}
+
+@keyframes dottedLineAnim {
+  from {
+    stroke-dashoffset: 4;
+  }
+  to {
+    stroke-dashoffset: 12;
+  }
+}
+
+.product-card {
+  background-color: #1f1f1f; /* Initial background */
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(70, 70, 70, 0.5); /* Slightly darker shadow */
+  padding: 16px;
+  text-align: center;
+  margin-top: 10px;
+  height: 260px;
+  transition: box-shadow 0.25s linear, background-color 0.25s ease-in; /* Combined transition properties */
+}
+
+.card-container:hover .product-card {
+  box-shadow: 1px 3px 15px #ccccccb4;
+}
+
+.edit{
+  filter: contrast(80%);
+}
+.product-card:hover {
+  cursor: pointer;
+  box-shadow: 3px 5px 10px rgba(255, 200, 0, 0.15);
+}
+
+.product-title {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  margin-top: 50px;
+  transition: color 150ms ease-in;
+  height: 2.5rem;
+}
+
+.product-title:hover {
+  color: #ec3333;
+}
+
+.product-description {
+  color: #b0b0b0; /* Lighter gray for description */
+  font-size: 0.9em;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-price {
+  color: #4caf50; /* Light green for price */
+  font-size: 1.3em;
+  margin-bottom: 16px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and above */
+@media (max-width: 1200px) {
+  .cards-wrapper {
+    justify-content: space-evenly; /* Adjust spacing between cards */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+  .product-title {
+    font-size: 1.3em;
+  }
+
+  .product-description {
+    font-size: 1em;
+  }
+
+  .product-price {
+    font-size: 1.4em;
+  }
+
+  .order-now {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  ul {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .main-container{
+    margin-top: 15%;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  body{
+    padding:0px;
+  }
+  .cards-wrapper {
+    padding: 0px;
+    padding-top: 15px;
+    justify-content: center; /* Center cards in extra small devices */
+  }
+
+  .product-price {
+    font-size: 1.3rem;
+  }
+
+  .order-now {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  .main-container{
+    margin-top: 20%;
+  }
+}
+.card-container.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  position: relative;
+}

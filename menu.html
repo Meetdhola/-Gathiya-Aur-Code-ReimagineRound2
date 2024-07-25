@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Restaurant Menu</title>
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/menu.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logoimg">
+            <img src="../assets/icons/ajays_logo_white.png" alt="">
+        </div>
+        <div class="mainbar hideonpc">
+            <a href="index.html">Home</a>
+            <a href="index.html">AboutUs</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="testimonal.html">Blog/News</a>
+            <a href="outlets.html">Our Outlets</a>
+            <a href="contact.html">ContactUs</a>
+            <div class="ucicon">
+                <img class="usericon"
+                    src="https://img.icons8.com/fluency-systems-filled/48/000000/guest-male.png"
+                    alt="guest-male" />
+                <img class="carticon" src="https://img.icons8.com/pastel-glyph/64/000000/shopping-cart--v2.png"
+                    alt="shopping-cart--v2" />
+            </div>
+            <!-- <a href="#contact-us">Contact Us</a> -->
+        </div>
+        <img class="menuicon hideonmobile" onclick="showsidebar()"
+            src="https://img.icons8.com/ios/50/000000/menu--v4.png" alt="menu--v4" />
+        <div class="sidebar">
+            <img class="closeicon" src="https://img.icons8.com/ios/50/000000/delete-sign--v1.png"
+                alt="delete-sign--v1" />
+            <div class="logoimg">
+                <img src="assets/images/ajays_logo_white.png" alt="">
+            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html">AboutUs</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="testimonal.html">Blog/News</a>
+            <a href="outlets.html">Our Outlets</a>
+            <a href="contact.html">ContactUs</a>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="menubar">
+            <ul>
+                <li>
+                    <button class="btn" data-category="burger">
+                        <span class="menu-icon"><img src="../assets/icons/burger.svg" alt="icon" class="icon"></span>
+                        <span class="btn-text">Burger</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" data-category="beverages">
+                        <span class="menu-icon"><img src="../assets/icons/coffee-product.svg" alt="icon" class="icon icon2"></span>
+                        <span class="btn-text">Beverages</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" data-category="pizza">
+                        <span class="menu-icon"><img src="../assets/icons/pizza.svg" alt="icon" class="icon icon2"></span>
+                        <span class="btn-text">Pizzas</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" data-category="sides">
+                        <span class="menu-icon"><img src="../assets/icons/french-fries-products.svg" alt="icon" class="icon icon2"></span>
+                        <span class="btn-text">Sides</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="cards-wrapper">
+            <!-- Burger Cards -->
+            <div class="card-container active" data-category="burger">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/bbq_burger.png" alt="Product Image" class="product-image" />
+                    </div>
+                    <h3 class="product-title">BBQ Burger</h3>
+                    <p class="product-description">
+                        Smoky BBQ flavour, with the perfect mix of spices, making this burger a delicious and unforgettable treat. Ek bite loge aur dil garden garden ho jayega. BBQ ka mazaa sabse alag!
+                    </p>
+                    <p class="product-price">₹ 40</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="burger">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/bbq_cheese_burger.png" alt="Product Image" class="product-image" />
+                    </div>
+                    <h3 class="product-title">BBQ Cheese Burger</h3>
+                    <p class="product-description">
+                        Smoky BBQ goodness combined with a generous filling of cheese. Thoda Spicy, Thoda Juicy! BBQ aur cheese ka jadoo jo dil ko chu jayega.
+                    </p>
+                    <p class="product-price">₹ 50</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="burger">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/veg-cheese-burger.png" alt="Product Image" class="product-image scale1 contain" />
+                    </div>
+                    <h3 class="product-title">Apna Veg. Cheesy Delight</h3>
+                    <p class="product-description">
+                        If you love to have that cheesy touch, just add CHEESE to our HUMBLE HUNGER QUENCHER. *GST Applicable
+                    </p>
+                    <p class="product-price">₹ 45</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="burger">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/veg_burger.png" alt="Product Image" class="product-image" />
+                    </div>
+                    <h3 class="product-title">Apna Veg. Burger</h3>
+                    <p class="product-description">
+                        A HUMBLE HUNGER QUENCHER, our simplest offering is a Crisp Golden Brown Patty nicely sandwiched between the Burger Bun with loads of Tom Mayo Spread and Onions. Simply Yummy !!!
+                    </p>
+                    <p class="product-price">₹ 35</p>
+                </div>
+            </div>
+            <!-- Beverages Cards -->
+            <div class="card-container active" data-category="beverages">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/mangoshake.png" alt="Product Image" class="product-image contain" />
+                    </div>
+                    <h3 class="product-title">Mango Shake</h3>
+                    <p class="product-description">Ek glass mein aam ka mazaa! Our Mango Shake is made of pure pulpy Alphonso, the king of fruits, giving it a rich, creamy, and refreshing taste. Naturally Addictive! #AamKiBaatHiKuchKhaasHai</p>
+                    <p class="product-price">₹ 50</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="beverages">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/IrishClassyColdCoffee.png" alt="Product Image" class="product-image scaled1 contain" />
+                    </div>
+                    <h3 class="product-title">Irish Classy Cold Coffee</h3>
+                    <p class="product-description">Our Irish Classy Cold Coffee is a delightful blend of smooth coffee with a hint of Irish cream flavor. Perfect balance of taste and elegance. Thodi classy, thodi sassy! #ClassyCoffee</p>
+                    <p class="product-price">₹ 50</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="beverages">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/hazelnutscoldcofee.png" alt="Product Image" class="product-image contain" />
+                    </div>
+                    <h3 class="product-title">Hazelnut Cold Coffee</h3>
+                    <p class="product-description">Nutty and nice! Our Hazelnut Cold Coffee combines the rich flavor of coffee with the smooth, nutty hint of hazelnut. Har sip mein milega aapko ek naya mazaa. #HazelHappiness</p>
+                    <p class="product-price">₹ 50</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="beverages">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/coldcoffee.png" alt="Product Image" class="product-image" />
+                    </div>
+                    <h3 class="product-title">Cold Coffee</h3>
+                    <p class="product-description">Apni Cold Coffee is hard to put in words. It's Creamy, frothy, with a rich flavor of coffee, not too sweet not too bitter. Its something you need to taste it to believe it. Our customers call it 'Sip of HappYness', the Y here is for YOU, our beloved customers. #ApniColdCoffee</p>
+                    <p class="product-price">₹ 30</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="pizza">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/paneerchillipizza.png" alt="Product Image" class="product-image scaled2 contain" />
+                    </div>
+                    <h3 class="product-title">Paneer Chilli Pizza</h3>
+                    <p class="product-description">Spicy and tangy, our Paneer Chilli Pizza brings the best of Desi Indian Chinese flavors together. Loaded with soft paneer cubes and a spicy chilli kick, every bite is a burst of taste. Cheesy goodness combined with a desi twist. Simply, ekdum Chinese!</p>
+                    <p class="product-price">₹ 100</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="pizza">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/makhanipizza.png" alt="Product Image" class="product-image contain scaled2" />
+                    </div>
+                    <h3 class="product-title">Makhani Pizza</h3>
+                    <p class="product-description">Rich, creamy, and utterly delicious, our Makhani Pizza is inspired by the classic Indian Makhani sauce. Topped with a blend of mozzarella cheese, this pizza has a buttery, velvety taste that’s truly irresistible. Makhani sauce and cheese ka ultimate combo, jo dil jeet le!</p>
+                    <p class="product-price">₹ 100</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="pizza">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/margheritapizza.png" alt="Product Image" class="product-image contain scaled2 edit" />
+                    </div>
+                    <h3 class="product-title">Margherita Pizza </h3>
+                    <p class="product-description">They call it Margherita; we call its PLAIN CHEESE PIZZA. Good for those who like to stay away from loads of toppings and who simple love their CHEESE, this one is Made for Each Other. Those cheese strands will make you fall in love with our Margherita.</p>
+                    <p class="product-price">₹ 70</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="pizza">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/vegpizza.png" alt="Product Image" class="product-image contain scaled2" />
+                    </div>
+                    <h3 class="product-title">Veg Delight Pizza</h3>
+                    <p class="product-description">An old school and homely choice pizza topping of Onions and Capsicum and our crispy pizza base gives it an absolute Desi Taste. Don’t forget to cherish the stringy cheese… Simply Yummy!!!</p>
+                    <p class="product-price">₹ 70</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="pizza">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/schezwanpizza.png" alt="Product Image" class="product-image" />
+                    </div>
+                    <h3 class="product-title">Super Shezwan Pizza</h3>
+                    <p class="product-description">A Fiery tingling taste that lasts long. Baked to be just enough hot and crispy, this pizza gives you a different feeling of taste and satisfaction.</p>
+                    <p class="product-price">₹ 90</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="pizza">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/classiccornpizza.png" alt="Product Image" class="product-image contain" />
+                    </div>
+                    <h3 class="product-title">Classic Corn Pizza</h3>
+                    <p class="product-description">Our fresh sweet corn and Capsicum toppings makes a classic combination of Sweet, Sharp and Spicy flavors to this Pizza. The cheesy flavour of cheddar and stringy mozzarella will simply mesmerise you. The Aptly baked to give a crispy bite, this one is just soothing.</p>
+                    <p class="product-price">₹ 90</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="pizza">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/tandooripaneerpizza.png" alt="Product Image" class="product-image contain" />
+                    </div>
+                    <h3 class="product-title">Tandoori Paneer Pizza</h3>
+                    <p class="product-description">We Indians love the grilled versions, the Smokey taste and the classy aroma of the TANDOORI. This mean master, our Tandoori Pizza is a perfect blend of those flavours, paneer, cheesy, strand cheese. You won’t hesitate to call it simply “Jhakass”</p>
+                    <p class="product-price">₹ 90</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="sides">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/periperifries.png" alt="Product Image" class="product-image contain" />
+                    </div>
+                    <h3 class="product-title">Peri Peri Fries</h3>
+                    <p class="product-description">A spicy twist to your favorite fries! Our Peri Peri Fries are perfectly golden and crispy, with a zesty Peri Peri seasoning that will leave your taste buds tingling. Ek baar khaoge, toh baar baar khaoge!</p>
+                    <p class="product-price">₹ 70</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="sides">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/cheesecornshots.png" alt="Product Image" class="product-image contain" />
+                    </div>
+                    <h3 class="product-title">Cheese Corn Shots</h3>
+                    <p class="product-description">Crispy on the outside, cheesy and corny on the inside! Our Cheese Corn Shots are the ultimate snack, filled with melted cheese, sweet corn and capsicum. Bas khate reh jaoge!</p>
+                    <p class="product-price">₹ 70</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="sides">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/dip.png" alt="Product Image" class="product-image contain" />
+                    </div>
+                    <h3 class="product-title">Dip</h3>
+                    <p class="product-description">Fries are great, but our Dips make them greatest. The mighty 4 flavors gives you an option to satiate your tastebuds. Sharp and Savory Shezwan Dip, Peppery Peri-peri Dip, Smokey and Tangy Tandoori Dip and the simplest yet favorite Tomato wala ToM ToM Dip. Bhool na jana … Dip ko sath le jana …</p>
+                    <p class="product-price">₹ 10</p>
+                </div>
+            </div>
+            <div class="card-container active" data-category="sides">
+                <svg class="dotted-border" xmlns="http://www.w3.org/2000/svg" width="240" height="320">
+                    <rect x="1" y="1" width="98%" height="98%" rx="10" ry="10" />
+                </svg>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="../assets/images/frenchfries.png" alt="Product Image" class="product-image contain" />
+                    </div>
+                    <h3 class="product-title">French Fries</h3>
+                    <p class="product-description">I love, you love, we all love… The Fantastic Fries. The anytime snack with its golden colour and crispy nature is the first love for Kids (with age no bar). Just like a Good Friend, they accompany your loved favorite meal at Ajay’s. Don’t be left out, get one for sure.</p>
+                    <p class="product-price">₹ 50</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../assets/icons/ajays_logo_white.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#privacy">Privacy Policy</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p>© 2024 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/utility.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

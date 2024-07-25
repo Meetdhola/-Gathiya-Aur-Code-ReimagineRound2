@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #000;
+}
+.container{
+    margin-top: 10%;
+}
+p,.features h2, .support h2{
+    margin: auto;
+    padding: 10px;
+}
+header {
+    background-color: #ec3333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1{
+    color: #ec3333;
+    font-weight: bolder;
+    width: max-content;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.hero p{
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    width: max-content;
+    margin-top: 10px;
+}
+.hero-img{
+    width: 70vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: auto;
+}
+.hero h1:nth-child(1){
+    font-size: 30px;
+    color: rebeccapurple;
+}
+
+.features, .support, .investment {
+    padding: 50px 20px;
+}
+
+.features h2, .support h2, .investment h2 {
+    color: rebeccapurple;
+    font-size: 27px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.features ul, .support .support-cards, .investment button {
+    margin-top: 20px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features ul li, .support .card ul li {
+    background: #ec3333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.features ul li:hover, .support .card ul li:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.features{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 95vw;
+    margin: auto;
+}
+.model{
+    display: flex;
+    flex-direction: column;
+    background-color: goldenrod;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.model h2{
+    color: #ec3333;
+    background-color: transparent;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.model p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    background-color: transparent;
+    color: white;
+}
+
+.support .support-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.support .card {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px);
+}
+
+.support .card h3 {
+    color: blue;
+}
+
+.investment {
+    background-color: #fff;
+    text-align: center;
+}
+
+.investment button {
+    background-color: #ec3333;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.investment button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.gif-decorations {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Make sure the GIFs don't interfere with user interactions */
+    z-index: -1; /* Ensure the decorations are behind the main content */
+}
+
+.gif-decorations img.decoration {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    animation: float 10s infinite alternate ease-in-out;
+    filter: invert(1);
+}
+
+.gif-decorations img:nth-child(1) { top: 10%; left: 5%; }
+.gif-decorations img:nth-child(2) { top: 80%; left: 45%; }
+.gif-decorations img:nth-child(3) { top: 30%; left: 10%; }
+.gif-decorations img:nth-child(4) { top: 75%; left: 20%; }
+.gif-decorations img:nth-child(5) { top: 50%; left: 5%; }
+.gif-decorations img:nth-child(6) { top: 5%; left: 55%; }
+.gif-decorations img:nth-child(7) { top: 70%; left: 10%; }
+.gif-decorations img:nth-child(8) { top: 30%; left: 70%; }
+.gif-decorations img:nth-child(9) { top: 90%; left: 45%; }
+.gif-decorations img:nth-child(10) { top: 20%; left: 45%; }
+.gif-decorations img:nth-child(11) { top: 20%; right: 5%; }
+.gif-decorations img:nth-child(12) { top: 60%; right: 35%; }
+.gif-decorations img:nth-child(13) { top: 40%; left: 25%; }
+.gif-decorations img:nth-child(14) { top: 90%; right: 15%; }
+.gif-decorations img:nth-child(15) { top: 60%; right: 5%; }
+.gif-decorations img:nth-child(16) { top: 10%; right: 30%; }
+.gif-decorations img:nth-child(17) { top: 20%; left: 75%; }
+/* Additional positions to ensure even spacing */
+.gif-decorations img:nth-child(18) { top: 35%; left: 15%; }
+.gif-decorations img:nth-child(19) { top: 80%; left: 25%; }
+.gif-decorations img:nth-child(20) { top: 50%; right: 40%; }
+.gif-decorations img:nth-child(21) { top: 25%; left: 50%; }
+.gif-decorations img:nth-child(22) { top: 70%; left: 60%; }
+.gif-decorations img:nth-child(23) { top: 15%; right: 20%; }
+.gif-decorations img:nth-child(24) { top: 55%; right: 10%; }
+.gif-decorations img:nth-child(25) { top: 90%; left: 70%; }
+.gif-decorations img:nth-child(26) { top: 5%; right: 85%; }
+
+/* Animation for floating effect */
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        margin-top: 12%;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .support .support-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-img{
+        min-width: 90%;
+    }
+
+    .gif-decorations img.decoration {
+        width: 70px;
+    }
+
+    .features ul li, .support .card ul li {
+        min-width: 80vw;
+    }
+    .support, .investment {
+        padding: 50px 0px;
+    }
+    .model{
+        padding: 20px 0px;
+    }
+    .hero p, .features p, .support p{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 470px) {
+    .container{
+        margin-top: 15%;
+    }
+    .hero {
+        padding: 30px 10px;
+    }
+    
+    .hero h1 {
+        font-size: 22px;
+    }
+    
+    .hero p {
+        width: 80vw;
+        font-size: 16px;
+    }
+
+    .hero-img {
+        min-width: 90%;
+        border-radius: 5px;
+    }
+
+    .features, .support, .investment {
+        padding: 30px 10px;
+    }
+
+    .features ul li, .support .card ul li {
+        font-size: 16px;
+        padding: 8px;
+        min-width: 90vw;
+    }
+
+    .support .card h3 {
+        font-size: 18px;
+    }
+
+    .investment button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    footer .social a {
+        font-size: 16px;
+    }
+
+    .gif-decorations img.decoration {
+        width: 50px;
+    }
+    .support .card ul:nth-child(2){
+        padding-left: 0px;
+    }
+    p{
+        width: auto;
+    }
+    .features h2, .support h2, .investment h2{
+        font-size: 20px;
+    }
+    .hero h1:nth-child(1){
+        font-size: 25px;
+        width: 90vw;
+    }
+    .support .card{
+        padding: 15px;
+        width: 90vw;
+    }
+    .model{
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero {
+        padding: 20px 5px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-img {
+        min-width: 90%;
+        border-radius: 5px;
+    }
+
+    .features, .support, .investment {
+        padding: 20px 5px;
+    }
+
+    .features ul li, .support .card ul li {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .support .card h3 {
+        font-size: 16px;
+    }
+
+    .investment button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    footer .social a {
+        font-size: 14px;
+    }
+    .support .card ul:nth-child(2){
+        padding-left: 0px;
+    }
+    .model{
+        padding: 20px 0px;
+    }
+}

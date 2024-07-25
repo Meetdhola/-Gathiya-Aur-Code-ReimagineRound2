@@ -1,0 +1,207 @@
+/*  */
+/* For navbar */
+/*  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 1vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(0.7vw);
+    backdrop-filter: blur(0.7vw);
+    z-index: 999; /* Ensure it stays on top */
+    /* background-color: rgba(255, 255, 255, 0.182);  */
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    overflow: hidden; /* Hide the expanding underline */
+    transition: color 0.3s ease;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Start from the center */
+    width: 0; /* Initial width */
+    height: 2px;
+    background-color: #CC9725; /* Color of the underline */
+    transform: translate(-50%,20%); /* Center the underline */
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+.navbar a:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+.navbar a:hover {
+    color: #CC9725; /* Tomato color for hover effect */
+}
+.ucicon{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    margin-right: 1vw;
+}
+.usericon{
+    width: 2vw;
+    height: 2vw;
+    filter: invert(1);
+}
+.carticon{
+    width: 2vw;
+    height: 2vw;
+    filter: invert(1);
+}
+.navbar .logoimg{
+    width: 35vw;
+    height: 8vh;
+    margin-left: 3vw;
+    overflow: hidden;
+}
+.logoimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.mainbar{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+/* sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #0606068e;
+    -webkit-backdrop-filter: blur(0.7vw);
+    backdrop-filter: blur(0.7vw);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0vw 5vw;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* opacity: 0; */
+    transform: translateX(100%);
+    transition: all 0.3s linear;
+}
+.sidebar .logoimg{
+    width: 30vw;
+    height: 30vw;
+}
+.closeicon{
+    position: absolute;
+    right: 5vw;
+    top: 6.5vw;
+    width: 10vw;
+    height: 10vw;
+    filter: invert(1);
+    /* display: block; */
+}
+.menuicon{
+    position: absolute;
+    right: 5vw;
+    top: 5vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 1vw;
+    padding: 2vw;
+    background-color: white;
+}
+.sidebar a{
+    padding: 5vw 1vw;
+}
+
+/*  */
+/* For div blue selecting part */
+/*  */
+div {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* footer */
+
+ .footer {
+    background-color: #000;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #CC9725;
+}
+.footer a::after {
+    content: '';
+    /* position: absolute; */
+    bottom: 0;
+    left: 50%; /* Start from the center */
+    width: 0; /* Initial width */
+    height: 2px;
+    background-color: #CC9725; /* Color of the underline */
+    transform: translate(-50%,40%); /* Center the underline */
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+.footer a:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+.footer a:hover {
+    color: #CC9725; /* Tomato color for hover effect */
+}
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+}
