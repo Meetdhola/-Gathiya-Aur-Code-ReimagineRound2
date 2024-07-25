@@ -1,6 +1,4 @@
-/*  */
 /* For navbar */
-/*  */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -12,7 +10,7 @@
     -webkit-backdrop-filter: blur(0.7vw);
     backdrop-filter: blur(0.7vw);
     z-index: 999; /* Ensure it stays on top */
-    /* background-color: rgba(255, 255, 255, 0.182);  */
+    /* background-color: rgba(255, 255, 255, 0.182); */
 }
 
 .navbar a {
@@ -32,7 +30,7 @@
     width: 0; /* Initial width */
     height: 2px;
     background-color: #CC9725; /* Color of the underline */
-    transform: translate(-50%,20%); /* Center the underline */
+    transform: translate(-50%, 20%); /* Center the underline */
     transition: width 0.3s ease; /* Smooth transition for width */
 }
 
@@ -43,42 +41,65 @@
 .navbar a:hover {
     color: #CC9725; /* Tomato color for hover effect */
 }
-.ucicon{
+
+.ucicon {
     display: flex;
     gap: 1vw;
     align-items: center;
     margin-right: 1vw;
 }
-.usericon{
+
+.usericon {
     width: 2vw;
     height: 2vw;
     filter: invert(1);
 }
-.carticon{
+
+.carticon {
     width: 2vw;
     height: 2vw;
     filter: invert(1);
 }
-.navbar .logoimg{
+
+.navbar .logoimg {
     width: 35vw;
     height: 8vh;
     margin-left: 3vw;
     overflow: hidden;
 }
-.logoimg img{
+
+.logoimg img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
 }
-.mainbar{
-    display: none;
+
+.mainbar {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2vw;
 }
-/* sidebar */
-.sidebar{
+
+/* Hide hamburger menu on larger screens */
+.menuicon {
+    display: none;
+}
+
+/* Show hamburger menu and hide main navbar on smaller screens */
+@media (max-width: 480px) {
+    .menuicon {
+        display: flex;
+    }
+
+    .mainbar {
+        display: none;
+    }
+}
+
+/* Sidebar */
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -94,36 +115,65 @@
     justify-content: flex-start;
     padding: 0vw 5vw;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    /* opacity: 0; */
-    transform: translateX(100%);
-    transition: all 0.3s linear;
+    transform: translateX(100%); /* Start hidden off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth sliding effect */
 }
-.sidebar .logoimg{
-    width: 30vw;
-    height: 30vw;
+
+/* Show the sidebar when active */
+.sidebar.active {
+    transform: translateX(0); /* Slide in */
 }
-.closeicon{
+
+/* Sidebar close icon */
+.closeicon {
     position: absolute;
     right: 5vw;
     top: 6.5vw;
     width: 10vw;
     height: 10vw;
     filter: invert(1);
-    /* display: block; */
+    cursor: pointer;
 }
-.menuicon{
+
+/* Sidebar menu icon */
+.menuicon {
     position: absolute;
     right: 5vw;
     top: 5vw;
-    width: 12vw;
-    height: 12vw;
+    width: 10vw;
+    height: 10vw;
     border-radius: 1vw;
     padding: 2vw;
     background-color: white;
+    cursor: pointer;
 }
-.sidebar a{
+
+/* Sidebar links */
+.sidebar a {
     padding: 5vw 1vw;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #CC9725; /* Hover color */
+}
+
+/* Hide hamburger menu on larger screens */
+.menuicon {
+    display: none;
+}
+
+/* Show hamburger menu and hide main navbar on smaller screens */
+@media (max-width: 480px) {
+    .menuicon {
+        display: flex;
+    }
+
+    .mainbar {
+        display: none;
+    }
 }
 
 /*  */

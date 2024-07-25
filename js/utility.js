@@ -67,3 +67,25 @@ function showsidebar() {
     })
 
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menuicon');
+    const sidebar = document.querySelector('.sidebar');
+    const closeIcon = document.querySelector('.closeicon');
+
+    // Show the sidebar
+    menuIcon.addEventListener('click', function() {
+        sidebar.classList.add('active');
+    });
+
+    // Hide the sidebar
+    closeIcon.addEventListener('click', function() {
+        sidebar.classList.remove('active');
+    });
+
+    // Optionally hide sidebar if user clicks outside of it
+    document.addEventListener('click', function(event) {
+        if (!sidebar.contains(event.target) && !menuIcon.contains(event.target) && sidebar.classList.contains('active')) {
+            sidebar.classList.remove('active');
+        }
+    });
+});
